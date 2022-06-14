@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function print(){
+                var x=document.getElementById('txt1').value
+
+                console.log(x.toUpperCase())
+                console.log(x.toLowerCase())
+                var z=x.split('/')
+                console.log(z)
+                var b="'" + x +"'";
+                console.log(b)
+                var a="'" + x.trim() +"'";
+                
+                console.log(a)
+            }
+            function print1(){
+                var x=document.getElementById("txt2").value;
+                var newValue=x.substr(3,2)+'-'+x.substr(0,2)+'-'+x.substr(6,4)
+                document.getElementById('txt2').value=newValue
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <input type="text" id="txt1">
+        </div>
+        <div>
+            <input type="text" id="txt2">
+        </div>
+        <div>
+            <input type="button" value="Save" onclick="print()" />
+            <input type="button" value="Convert" onclick="print1()" />
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            var x= setInterval(displayDate,1000);
+
+            function displayDate(){
+                var today=new Date();
+                //document.getElementById("sp1").innerText=today.toTimeString();
+                var time=today.getHours() + ':'+ today.getMinutes() +':'+ today.getSeconds();
+                document.getElementById("sp1").innerText=time;
+            }
+
+            function StopClock(){
+                clearInterval(x)
+            }
+        </script>
+
+
+    </head>
+    <body>
+        <span id="sp1"></span>
+
+        <input type="button" value="Stop" onclick="StopClock()" />
+    </body>
+</html>

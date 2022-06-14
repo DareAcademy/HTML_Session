@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function print(){
+                var x=document.getElementById("txt1").value;
+                console.log(x)
+            }
+
+            function print2(){
+                document.getElementById("txt1").value="Noor"
+            }
+
+            function print1(){
+                //var x=document.getElementsByClassName("abc").value;
+                var x=document.getElementsByClassName("abc");
+                // console.log(x[0].value)
+                // console.log(x[1].value)
+                    
+                for(var i=0;i<2;i++){
+                    console.log(x[i].value)
+                }
+            }
+
+            function print3(){
+                var x=document.getElementById("txtname").value;
+                if(x==''){
+                    document.getElementById('sp1').innerText="Please fill Name"
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <div>
+            <input type="text" id="txt1" >
+        </div>
+        <div>
+            <!-- <span class="abc">Hello</span>
+            <span class="abc">World</span> -->
+
+            <input type="text" class="abc">
+            <!-- <input type="text" class="abc"> -->
+        </div>
+        <div>
+            <span>Name</span>
+            <input type="text" id="txtname" />
+            <span id="sp1"></span>
+        </div>
+    <div>
+        <input type="button" value="ById" onclick="print()">
+        <input type="button" value="ByClass" onclick="print1()">
+        <input type="button" value="set value" onclick="print2()">
+        <input type="button" value="Check" onclick="print3()">
+    </div>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function build(){
+                var tr1=document.createElement("tr");
+                var td1=document.createElement("td");
+                tr1.appendChild(td1);
+                var v1=document.getElementById("txt1").value;
+                var td1_v=document.createTextNode(v1);
+                td1.appendChild(td1_v);
+                //td1.appendChild(v1);// error
+                var td2=document.createElement("td");
+                tr1.appendChild(td2);
+                var v2=document.getElementById("txt2").value;
+                var td2_v=document.createTextNode(v2);
+                td2.appendChild(td2_v)
+                var tab=document.getElementById("table1");
+                tab.appendChild(tr1)
+            }
+
+        </script>
+    </head>
+    <body>
+        <table id="table1" border="1">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Salary
+                </th>
+            </tr>
+        </table>
+        <div>
+            <span>Name</span>
+            <input type="text" id="txt1" />
+        </div>
+        <div>
+            <span>Salary</span>
+            <input type="text" id="txt2" />
+        </div>
+        <div>
+            <input type="button" value="Save" onclick="build()" />
+        </div>
+    </body>
+</html>

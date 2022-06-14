@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function print(){
+                // code
+                console.log("hello");
+                console.log("hello");
+                console.log("hello");
+            }
+
+            function print1(){
+                // like
+                console.log("dbl click event fire!")
+            }
+
+            function print2(){
+                console.log("focus event fire!")
+            }
+
+            function print3(){
+                console.log("blur event fire!")
+            }
+
+            function print4(){
+                console.log("change event fire!")
+            }
+            function print5(){
+                console.log("mouseover event fire!")
+            }
+            function print6(){
+                console.log("mouseout event fire!")
+            }
+            function print7(){
+                alert("hello")
+            }
+
+        </script>
+
+        <script src="script1.js" type="text/javascript"></script>
+    </head>
+    <body onload="print7()">
+        <div>
+            <input type="button" value="Save" onclick="print()" >
+        </div>
+        <div>
+            <img src="blank-profile-picture-973460_640.png" style="width: 50px;" ondblclick="print1()" >
+        </div>
+        <div>
+            <span>ID</span>
+            <input type="text" onfocus="print2()" onblur="print3()" >
+        </div>
+        <div>
+            <select onchange="print4()">
+                <option>Jordan</option>
+                <option>USA</option>
+            </select>
+        </div>
+        <div style="width: 100px;height:100px;background-color:blue" onmouseover="print5()" onmouseout="print6()">
+
+        </div>
+
+        
+        <!-- <script type="text/javascript">
+            function print2(){
+
+                
+            } -->
+
+        </script>
+
+    </body>
+</html>

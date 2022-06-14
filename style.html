@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function changeStyle(){
+                // document.getElementById('div1').style.backgroundColor="blue";
+                // document.getElementById('div1').style.width="300px"
+                document.getElementById('div1').style.display="none"
+            }
+
+            function showElement(){
+                document.getElementById('div1').style.display="block";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="div1" style="height: 100px;width:100px;background-color:black">
+
+        </div>
+        <input type="button" value="Change Style" onclick="changeStyle()" />
+        <input type="button" value="Show" onclick="showElement()" />
+    </body>
+</html>

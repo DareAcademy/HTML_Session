@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function print(){
+                alert('hello')
+            }
+            function print1(){
+                var x= confirm('Are you sure from Closing the Page?')
+                if(x==true){
+                    //console.log("the ok clicked")
+                    window.location="date.html"
+                    // code
+                }
+                else
+                {
+                    //console.log("the cancel clicked")
+                }
+                
+            }
+        </script>
+    </head>
+    <body onload="print()">
+        <input type="button" value="Close" onclick="print1()" />
+    </body>
+</html>
